@@ -1,0 +1,43 @@
+.Initial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  text-align: center;
+
+  h1 {
+    font-weight: bold;
+    font-size: 80px;
+    color: #663399;
+    background-color: #fff;
+    padding: .8em;
+    border-radius: 100%;
+  }
+
+  a {
+    margin: 1em;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 0.75em;
+    background-color: #ff9701;
+    border: #ffb600 15px solid;
+    border-radius: 15px;
+    animation: Initial-link-anim 1s ease-in-out 0s infinite alternate;
+    transition: background-color 300ms ease-in-out;
+
+    &:hover {
+      background-color: #ffb600;
+    }
+  }
+}
+
+@keyframes Initial-link-anim {
+  0% {
+    border-width: 15px;
+  }
+  100%
+  {
+    border-width: 25px;
+  }
+}
