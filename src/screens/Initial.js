@@ -6,7 +6,7 @@ function Initial() {
   return (
     <div className="Initial">
       <h1>Mistrz Matematyki</h1>
-      <Link to="/class">Rozpocznij</Link>
+      <Link to="/classes">Rozpocznij</Link>
     </div>
   );
 }

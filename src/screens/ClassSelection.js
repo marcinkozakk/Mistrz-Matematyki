@@ -7,8 +7,8 @@ function ClassSelection() {
     <div className="ClassSelection">
       <h1>Mistrz Matematyki</h1>
       <div className="linksContainer">
-        <Link to="/section">Klasa 1</Link>
-        <Link to="/section">Klasa 2</Link>
+        <Link to="/sections/1">Klasa 1</Link>
+        <Link to="/sections/2">Klasa 2</Link>
       </div>
     </div>
   );

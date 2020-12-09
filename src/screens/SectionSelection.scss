@@ -1,0 +1,41 @@
+.SectionSelection {
+  animation: fadein 1s;
+
+  .backLink {
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0.75em;
+    background-color: #ff9701;
+    border: #ffb600 10px solid;
+    border-radius: 10px;
+    z-index: 1;
+    transition: background-color 300ms ease-in-out;
+
+    &:hover {
+      background-color: #ffb600;
+    }
+  }
+
+  h1 {
+    position: absolute;
+    width: 100%;
+    top: .6em;
+    margin: 0;
+    font-size: 82px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff9701;
+  }
+
+  .sections {
+    margin: 170px auto 0;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

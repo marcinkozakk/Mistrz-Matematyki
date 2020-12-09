@@ -1,0 +1,33 @@
+.GameLink {
+  margin: 5px;
+  width: 390px;
+  height: 150px;
+  display: flex;
+  padding: 20px 0;
+  border: 2px #0099d6 solid;
+  border-radius: 20px;
+  background-color: #f0f8ff;
+  color: #000;
+  transition: background-color .3s ease-in-out;
+
+  &:hover {
+    background-color: #bde5ff;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 45px;
+    text-align: right;
+  }
+
+  img {
+    height: 100%;
+    margin: 0 4%;
+  }
+
+  div {
+    min-width: 60px;
+    display: block;
+    font-size: 86px;
+  }
+}

@@ -19,7 +19,12 @@ body {
   background: #00b7ff;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
+  color: #7c220d;
   text-decoration: none;
 }
 
@@ -35,10 +40,15 @@ body::before {
   opacity: 0;
 }
 
-body.route-::before, body.route-class::before {
+body.route-::before, body.route-classes::before {
   opacity: 100%;
 }
 
-body.route-section::before {
+body.route-sections::before {
   opacity: 0
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

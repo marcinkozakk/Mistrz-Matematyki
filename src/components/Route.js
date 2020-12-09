@@ -3,6 +3,7 @@ import {Switch, Route, useLocation} from 'react-router-dom';
 import ClassSelection from '../screens/ClassSelection';
 import Initial from '../screens/Initial';
 import SectionSelection from '../screens/SectionSelection';
+import Section from '../screens/Section';
 
 function usePageViews() {
   let location = useLocation();
@@ -15,11 +16,14 @@ function Router() {
   usePageViews();
   return (
     <Switch >
-      <Route path="/class">
+      <Route path="/classes">
         <ClassSelection/>
       </Route>
-      <Route path="/section">
+      <Route path="/sections/:classNumber">
         <SectionSelection/>
+      </Route>
+      <Route path="/game/:classNumber/:gameIndex">
+        <Section/>
       </Route>
       <Route path="/">
         <Initial/>
