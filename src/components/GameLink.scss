@@ -3,6 +3,7 @@
   width: 390px;
   height: 150px;
   display: flex;
+  align-items: center;
   padding: 20px 0;
   border: 2px #0099d6 solid;
   border-radius: 20px;
@@ -26,7 +27,7 @@
   }
 
   div {
-    min-width: 60px;
+    min-width: 50px;
     display: block;
     font-size: 86px;
   }
