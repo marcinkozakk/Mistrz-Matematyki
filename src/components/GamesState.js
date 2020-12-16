@@ -1,5 +1,6 @@
 import LiczeniePrzedmiotow from '../games/11LiczeniePrzedmiotow';
 import PorownywanieLiczb from '../games/12PorownywanieLiczb';
+import DodawanieIOdejmowanie from '../games/13DodawanieIOdejmowanie';
 
 class GamesState {
 
@@ -104,7 +105,7 @@ class GamesState {
         },
         {
           name: 'Dodawanie i odejmowanie',
-          component: 0
+          component: DodawanieIOdejmowanie
         },
         {
           name: 'Pieniądze i zakupy',
