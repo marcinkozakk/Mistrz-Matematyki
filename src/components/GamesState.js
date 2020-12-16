@@ -1,4 +1,5 @@
 import LiczeniePrzedmiotow from '../games/11LiczeniePrzedmiotow';
+import PorownywanieLiczb from '../games/12PorownywanieLiczb';
 
 class GamesState {
 
@@ -99,7 +100,7 @@ class GamesState {
         },
         {
           name: 'Porównywanie liczb',
-          component: 0
+          component: PorownywanieLiczb
         },
         {
           name: 'Dodawanie i odejmowanie',
