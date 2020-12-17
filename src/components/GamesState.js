@@ -1,6 +1,7 @@
 import LiczeniePrzedmiotow from '../games/11LiczeniePrzedmiotow';
 import PorownywanieLiczb from '../games/12PorownywanieLiczb';
 import DodawanieIOdejmowanie from '../games/13DodawanieIOdejmowanie';
+import UzupelnianieLuk from '../games/15UzupelnianieLuk';
 
 class GamesState {
 
@@ -113,7 +114,7 @@ class GamesState {
         },
         {
           name: 'Uzupełnianie luk',
-          component: 0
+          component: UzupelnianieLuk
         },
         {
           name: 'Figury geometryczne',
