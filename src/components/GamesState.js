@@ -3,6 +3,7 @@ import PorownywanieLiczb from '../games/12PorownywanieLiczb';
 import DodawanieIOdejmowanie from '../games/13DodawanieIOdejmowanie';
 import DodawanieIOdejmowanie2 from '../games/22DodawanieIOdejmowanie';
 import UzupelnianieLuk from '../games/15UzupelnianieLuk';
+import MnozenieIDzielenie from '../games/23MnozenieIDzielenie';
 
 class GamesState {
 
@@ -137,7 +138,7 @@ class GamesState {
         },
         {
           name: 'Mnożenie i dzielenie',
-          component: 0
+          component: MnozenieIDzielenie
         },
         {
           name: 'Pieniądze i zakupy',
