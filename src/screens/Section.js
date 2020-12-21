@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './Section.scss';
 import award from '../assets/images/trophy.svg';
 import {Link, useParams} from 'react-router-dom';
 import GamesState from '../components/GamesState';
+import PropTypes from 'prop-types';
 
-function Section() {
+function Section(props) {
   const { classNumber, gameIndex } = useParams();
   const game = GamesState.state[classNumber][gameIndex];
 
@@ -31,6 +32,15 @@ function Section() {
     setIncorrect(incorrect + 1);
   }
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      props.onSecondPassed();
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  });
+
+
   return (
     <div className="Section">
       <div className={'status ' + (fade ? 'fade ' : ' ') + (status)} onAnimationEnd={() => setFade(false)}/>
@@ -47,7 +57,8 @@ function Section() {
           <div>Poprawnych: {correct}</div>
           <div>Błędnych: {incorrect}</div>
           <div>
-          Czas twojej nauki:<br/>
+          Czas twojej nauki:
+            {new Date(1000 * props.timer).toISOString().substr(14, 5)}<br/>
           </div>
         </div>
         <div>
@@ -65,5 +76,10 @@ function Section() {
     </div>
   );
 }
+
+Section.propTypes = {
+  timer: PropTypes.number,
+  onSecondPassed: PropTypes.func
+};
 
 export default Section;

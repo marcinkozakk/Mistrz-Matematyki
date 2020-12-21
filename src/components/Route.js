@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Switch, Route, useLocation} from 'react-router-dom';
 import ClassSelection from '../screens/ClassSelection';
 import Initial from '../screens/Initial';
@@ -14,6 +14,13 @@ function usePageViews() {
 
 function Router() {
   usePageViews();
+
+  const [timer, setTimer] = useState(0);
+
+  function onSecondPassed() {
+    setTimer(timer + 1);
+  }
+
   return (
     <Switch >
       <Route path="/classes">
@@ -23,7 +30,7 @@ function Router() {
         <SectionSelection/>
       </Route>
       <Route path="/game/:classNumber/:gameIndex">
-        <Section/>
+        <Section timer={timer} onSecondPassed={onSecondPassed} />
       </Route>
       <Route path="/">
         <Initial/>
