@@ -7,12 +7,14 @@ import {Link} from 'react-router-dom';
 
 function GameLink(prop) {
   const game = GamesState.state[prop.classNumber][prop.gameNumber];
+  const awards = GamesState.getAwards(game.correct);
+  const isReadyToDiploma = GamesState.isReadyToDiploma(prop.classNumber, prop.gameNumber);
 
   return (
-    <Link to={`/game/${prop.classNumber}/${prop.gameNumber}`} className="GameLink">
+    <Link to={`/game/${prop.classNumber}/${prop.gameNumber}`} className={'GameLink' + (isReadyToDiploma ? ' ready' : '')}>
       <h2>{game.name}</h2>
       <img src={award} alt="Nagroda"/>
-      <div>{GamesState.getAwards(game.correct)}</div>
+      <div>{awards}</div>
     </Link>
   );
 }

@@ -49,6 +49,10 @@ body.route-sections::before {
   opacity: 0
 }
 
+body[class^="route-diploma"] {
+  background-color: #ffffff;
+}
+
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }

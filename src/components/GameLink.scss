@@ -8,11 +8,15 @@
   border: 2px #0099d6 solid;
   border-radius: 20px;
   background-color: #f0f8ff;
-  color: #000;
+  color: #f44336;
   transition: background-color .3s ease-in-out;
 
   &:hover {
     background-color: #bde5ff;
+  }
+
+  &.ready {
+    color: #4caf50;
   }
 
   h2 {

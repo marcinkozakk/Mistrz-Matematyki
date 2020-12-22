@@ -4,6 +4,7 @@ import ClassSelection from '../screens/ClassSelection';
 import Initial from '../screens/Initial';
 import SectionSelection from '../screens/SectionSelection';
 import Section from '../screens/Section';
+import Diploma from '../screens/Diploma';
 
 function usePageViews() {
   let location = useLocation();
@@ -31,6 +32,9 @@ function Router() {
       </Route>
       <Route path="/game/:classNumber/:gameIndex">
         <Section timer={timer} onSecondPassed={onSecondPassed} />
+      </Route>
+      <Route path="/diploma/:classNumber">
+        <Diploma/>
       </Route>
       <Route path="/">
         <Initial/>

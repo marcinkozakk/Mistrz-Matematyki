@@ -188,6 +188,11 @@ class GamesState {
     }
   }
 
+  isReadyToDiploma(classNumber, gameIndex) {
+    return this.state[classNumber][gameIndex].correct > this.state[classNumber][gameIndex].incorrect
+      && this.getAwards(this.state[classNumber][gameIndex].correct) > 0;
+  }
+
   addCorrect(classNumber, gameIndex) {
     this.state[classNumber][gameIndex].correct++;
     this.saveToLocalStorage();
