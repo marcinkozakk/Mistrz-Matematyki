@@ -7,6 +7,7 @@ import MnozenieIDzielenie from '../games/23MnozenieIDzielenie';
 import FiguryGeometryczne from '../games/16FiguryGeometryczne';
 import PorownywanieLiczb2 from '../games/21PorownywanieLiczb';
 import UzupelnianieLuk2 from '../games/25UzupelnianieLuk';
+import LiczbyRzymskie2 from '../games/26LiczbyRzymskie';
 
 class GamesState {
 
@@ -153,7 +154,7 @@ class GamesState {
         },
         {
           name: 'Liczby rzymskie',
-          component: 0
+          component: LiczbyRzymskie2
         },
         {
           name: 'Termometr',
