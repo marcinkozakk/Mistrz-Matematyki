@@ -5,6 +5,7 @@ import DodawanieIOdejmowanie2 from '../games/22DodawanieIOdejmowanie';
 import UzupelnianieLuk from '../games/15UzupelnianieLuk';
 import MnozenieIDzielenie from '../games/23MnozenieIDzielenie';
 import FiguryGeometryczne from '../games/16FiguryGeometryczne';
+import PorownywanieLiczb2 from '../games/21PorownywanieLiczb';
 
 class GamesState {
 
@@ -131,7 +132,7 @@ class GamesState {
       2: [
         {
           name: 'Porównywanie liczb',
-          component: 0
+          component: PorownywanieLiczb2
         },
         {
           name: 'Dodawanie i odejmowanie',
