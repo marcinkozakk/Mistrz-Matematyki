@@ -4,6 +4,7 @@ import DodawanieIOdejmowanie from '../games/13DodawanieIOdejmowanie';
 import DodawanieIOdejmowanie2 from '../games/22DodawanieIOdejmowanie';
 import UzupelnianieLuk from '../games/15UzupelnianieLuk';
 import MnozenieIDzielenie from '../games/23MnozenieIDzielenie';
+import FiguryGeometryczne from '../games/16FiguryGeometryczne';
 
 class GamesState {
 
@@ -120,7 +121,7 @@ class GamesState {
         },
         {
           name: 'Figury geometryczne',
-          component: 0
+          component: FiguryGeometryczne
         },
         {
           name: 'Kalendarz i czas',
