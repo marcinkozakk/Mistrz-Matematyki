@@ -6,6 +6,7 @@ import UzupelnianieLuk from '../games/15UzupelnianieLuk';
 import MnozenieIDzielenie from '../games/23MnozenieIDzielenie';
 import FiguryGeometryczne from '../games/16FiguryGeometryczne';
 import PorownywanieLiczb2 from '../games/21PorownywanieLiczb';
+import UzupelnianieLuk2 from '../games/25UzupelnianieLuk';
 
 class GamesState {
 
@@ -148,7 +149,7 @@ class GamesState {
         },
         {
           name: 'Uzupełnianie luk',
-          component: 0
+          component: UzupelnianieLuk2
         },
         {
           name: 'Liczby rzymskie',
