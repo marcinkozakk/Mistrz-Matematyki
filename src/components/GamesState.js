@@ -11,6 +11,7 @@ import LiczbyRzymskie2 from '../games/26LiczbyRzymskie';
 import KalendarzICzas from '../games/17KalendarzICzas';
 import Termometr from '../games/27Termometr';
 import PieniadzeIZakupy from '../games/14PieniadzeIZakupy';
+import PieniadzeIZakupy2 from '../games/24PieniadzeIZakupy';
 
 class GamesState {
 
@@ -149,7 +150,7 @@ class GamesState {
         },
         {
           name: 'Pieniądze i zakupy',
-          component: 0
+          component: PieniadzeIZakupy2
         },
         {
           name: 'Uzupełnianie luk',
