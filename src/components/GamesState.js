@@ -10,6 +10,7 @@ import UzupelnianieLuk2 from '../games/25UzupelnianieLuk';
 import LiczbyRzymskie2 from '../games/26LiczbyRzymskie';
 import KalendarzICzas from '../games/17KalendarzICzas';
 import Termometr from '../games/27Termometr';
+import PieniadzeIZakupy from '../games/14PieniadzeIZakupy';
 
 class GamesState {
 
@@ -118,7 +119,7 @@ class GamesState {
         },
         {
           name: 'Pieniądze i zakupy',
-          component: 0
+          component: PieniadzeIZakupy
         },
         {
           name: 'Uzupełnianie luk',
