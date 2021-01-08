@@ -8,6 +8,7 @@ import FiguryGeometryczne from '../games/16FiguryGeometryczne';
 import PorownywanieLiczb2 from '../games/21PorownywanieLiczb';
 import UzupelnianieLuk2 from '../games/25UzupelnianieLuk';
 import LiczbyRzymskie2 from '../games/26LiczbyRzymskie';
+import KalendarzICzas from '../games/17KalendarzICzas';
 
 class GamesState {
 
@@ -128,7 +129,7 @@ class GamesState {
         },
         {
           name: 'Kalendarz i czas',
-          component: 0
+          component: KalendarzICzas
         },
       ],
       2: [
