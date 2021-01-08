@@ -9,6 +9,7 @@ import PorownywanieLiczb2 from '../games/21PorownywanieLiczb';
 import UzupelnianieLuk2 from '../games/25UzupelnianieLuk';
 import LiczbyRzymskie2 from '../games/26LiczbyRzymskie';
 import KalendarzICzas from '../games/17KalendarzICzas';
+import Termometr from '../games/27Termometr';
 
 class GamesState {
 
@@ -159,7 +160,7 @@ class GamesState {
         },
         {
           name: 'Termometr',
-          component: 0
+          component: Termometr
         },
       ]
     };
