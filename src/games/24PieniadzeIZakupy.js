@@ -63,6 +63,19 @@ function PieniadzeIZakupy(prop) {
     newGame();
   }
 
+  function formatValue(value) {
+    let output = '';
+    if(value >= 1) {
+      output += Math.floor(value) + ' zł ';
+    }
+    const split = value.split(/\.0|\./);
+    if(value % 1 !== 0) {
+      output += split[split.length - 1];
+      output += ' gr';
+    }
+    return output;
+  }
+
   useEffect(() => {
     newGame();
   }, []);
@@ -77,7 +90,9 @@ function PieniadzeIZakupy(prop) {
       </div>
       <div className="answers">
         {game.answers.map((e, i) =>
-          <div onClick={() => checkAnswer(e)} key={i}>{e}</div>
+          <div onClick={() => checkAnswer(e)} key={i}>
+            {formatValue(e)}
+          </div>
         )}
       </div>
     </div>

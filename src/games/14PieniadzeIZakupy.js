@@ -71,7 +71,7 @@ function PieniadzeIZakupy(prop) {
       </div>
       <div className="answers">
         {game.answers.map((e, i) =>
-          <div onClick={() => checkAnswer(e)} key={i}>{e}</div>
+          <div onClick={() => checkAnswer(e)} key={i}>{e} zł</div>
         )}
       </div>
     </div>

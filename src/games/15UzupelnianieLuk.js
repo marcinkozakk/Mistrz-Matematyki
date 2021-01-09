@@ -4,7 +4,7 @@ import './15UzupelnianieLuk.scss';
 
 function UzupelnianieLuk(prop) {
   const maxNumber = 10;
-  const taskCommand = 'Co wpisać w lukę, aby działania było prawidłowe?';
+  const taskCommand = 'Co wpisać w lukę, aby działanie było prawidłowe?';
 
   const [game, setGame] = useState({
     operator: 0,

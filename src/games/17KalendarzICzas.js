@@ -26,7 +26,7 @@ function KalendarzICzas(prop) {
   function newGame() {
     const randomIndex = random(3);
     const seasonInTaskCommand = seasonsInTaskCommand[randomIndex];
-    const taskCommand = 'Pora roku tuż przed '+seasonInTaskCommand;
+    const taskCommand = 'Która pora roku jest przed '+seasonInTaskCommand + '?';
 
     const answers = seasons.slice();
     answers.splice(randomIndex, 1);

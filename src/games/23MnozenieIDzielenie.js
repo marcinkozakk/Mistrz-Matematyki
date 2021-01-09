@@ -4,7 +4,7 @@ import './23MnozenieIDzielenie.scss';
 
 function MnozenieIDzielenie(prop) {
   const maxNumber = 30;
-  const taskCommand = 'Wskaż rozwiązania działania';
+  const taskCommand = 'Wskaż rozwiązanie działania';
 
   const [game, setGame] = useState({
     operator: 0,
