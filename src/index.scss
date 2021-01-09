@@ -42,7 +42,7 @@ body::before {
 }
 
 body.route-::before, body.route-classes::before {
-  opacity: 100%;
+  opacity: 1;
 }
 
 body.route-sections::before {
