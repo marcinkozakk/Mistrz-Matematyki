@@ -11,6 +11,7 @@ import temp7 from '../assets/images/temperature/-7.PNG';
 import temp11 from '../assets/images/temperature/-11.PNG';
 import temp13 from '../assets/images/temperature/-13.PNG';
 import temp14 from '../assets/images/temperature/-14.PNG';
+import Voice from '../components/Voice';
 
 function Termometr(prop) {
   const taskCommand = 'Ile stopni pokazuje termometr?';
@@ -51,11 +52,9 @@ function Termometr(prop) {
   function newGame() {
     const randomIndex = random(temperatures.length);
     const correctTemperature = temperatures[randomIndex];
-    const image = randomIndex;
-
     setGame({
       correctTemperature: correctTemperature,
-      image: image,
+      image: randomIndex,
       answers: shuffle([correctTemperature-1, correctTemperature, correctTemperature+1])
     });
   }
@@ -75,7 +74,7 @@ function Termometr(prop) {
 
   return (
     <div className="Termometr">
-      <h2>{taskCommand}</h2>
+      <Voice text={taskCommand}/>
       <div className="image">
         <img src={images[game.image]} alt="Termometr"/>
       </div>

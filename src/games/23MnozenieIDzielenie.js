@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import './23MnozenieIDzielenie.scss';
+import Voice from '../components/Voice';
 
 function MnozenieIDzielenie(prop) {
   const maxNumber = 30;
@@ -68,7 +69,7 @@ function MnozenieIDzielenie(prop) {
 
   return (
     <div className="DodawanieIOdejmowanie">
-      <h2>{taskCommand}</h2>
+      <Voice text={taskCommand}/>
       <div className="task">
         {game.randomNumbers[0]} {game.operator === 0 ? '·' : ':'} {game.randomNumbers[1]} =
       </div>

@@ -4,6 +4,7 @@ import './14PieniadzeIZakupy.scss';
 import zl1 from '../assets/images/coins/1zl.png';
 import zl2 from '../assets/images/coins/2zl.png';
 import zl5 from '../assets/images/coins/5zl.png';
+import Voice from '../components/Voice';
 
 function PieniadzeIZakupy(prop) {
 
@@ -63,7 +64,7 @@ function PieniadzeIZakupy(prop) {
 
   return (
     <div className="PieniadzeIZakupy">
-      <h2>{taskCommand}</h2>
+      <Voice text={taskCommand}/>
       <div className='images'>
         {[...Array(3)].map((e, i) =>
           <img key={i} src={game.images[i]} alt="Moneta"/>

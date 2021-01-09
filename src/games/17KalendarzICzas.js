@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import './17KalendarzICzas.scss';
+import Voice from '../components/Voice';
 
 function KalendarzICzas(prop) {
 
@@ -24,7 +25,7 @@ function KalendarzICzas(prop) {
   }
 
   function newGame() {
-    const randomIndex = random(3);
+    const randomIndex = random(4);
     const seasonInTaskCommand = seasonsInTaskCommand[randomIndex];
     const taskCommand = 'Która pora roku jest przed '+seasonInTaskCommand + '?';
 
@@ -57,7 +58,7 @@ function KalendarzICzas(prop) {
 
   return (
     <div className="KalendarzICzas">
-      <h2>{game.taskCommand}</h2>
+      <Voice text={game.taskCommand}/>
       <div className="answers">
         {game.answers.map((e, i) =>
           <div onClick={() => checkAnswer(e)} key={i}>{e}</div>

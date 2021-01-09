@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import './25UzupelnianieLuk.scss';
+import Voice from '../components/Voice';
 
 function UzupelnianieLuk(prop) {
   const maxNumber = 30;
@@ -111,7 +112,7 @@ function UzupelnianieLuk(prop) {
 
   return (
     <div className="UzupelnianieLuk">
-      <h2>{taskCommand}</h2>
+      <Voice text={taskCommand}/>
       <div className="task">
         {getTask()}
       </div>

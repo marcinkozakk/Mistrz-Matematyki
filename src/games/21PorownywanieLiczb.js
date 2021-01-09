@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import './21PorownywanieLiczb.scss';
+import Voice from '../components/Voice';
 
 function PorownywanieLiczb(prop) {
   const maxNumber = 100;
@@ -47,7 +48,7 @@ function PorownywanieLiczb(prop) {
 
   return (
     <div className="PorownywanieLiczb">
-      <h2>{taskCommand}</h2>
+      <Voice text={taskCommand}/>
       <div className="task">
         {game.randomNumbers[0]}
         <div className="gap"/>

@@ -5,6 +5,7 @@ import hexagon from '../assets/images/hexagon.png';
 import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import './16FiguryGeometryczne.scss';
+import Voice from '../components/Voice';
 
 function FiguryGeometryczne(prop) {
   const taskCommands = [
@@ -92,7 +93,7 @@ function FiguryGeometryczne(prop) {
 
   return (
     <div className="FiguryGeometryczne">
-      <h2>{game.task === 0 ? taskCommands[0] : taskCommands[1] + figures[game.figure]}</h2>
+      <Voice text={game.task === 0 ? taskCommands[0] : taskCommands[1] + figures[game.figure]}/>
       {game.task === 0 && <div className="figure">
         <img src={images[game.figure]} alt="Figura geometryczna"/>
       </div>}

@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import './13DodawanieIOdejmowanie.scss';
+import Voice from '../components/Voice';
 
 function DodawanieIOdejmowanie(prop) {
   const maxNumber = 10;
-  const taskCommand = 'Wskaż rozwiązania działania';
+  const taskCommand = 'Wskaż rozwiązanie działania';
 
   const [game, setGame] = useState({
     operator: 0,
@@ -67,7 +68,7 @@ function DodawanieIOdejmowanie(prop) {
 
   return (
     <div className="DodawanieIOdejmowanie">
-      <h2>{taskCommand}</h2>
+      <Voice text={taskCommand}/>
       <div className="task">
         {game.randomNumbers[0]} {game.operator === 0 ? '+' : '-'} {game.randomNumbers[1]} =
       </div>

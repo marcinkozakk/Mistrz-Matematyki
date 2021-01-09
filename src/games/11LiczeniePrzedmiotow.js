@@ -11,6 +11,7 @@ import j from '../assets/images/things/sports-car.svg';
 import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import './11LiczeniePrzedmiotow.scss';
+import Voice from '../components/Voice';
 
 function LiczeniePrzedmiotow(prop) {
   const taskCommand = 'Ile widzisz przedmiotów?';
@@ -69,7 +70,7 @@ function LiczeniePrzedmiotow(prop) {
 
   return (
     <div className="LiczeniePrzedmiotow">
-      <h2>{taskCommand}</h2>
+      <Voice text={taskCommand}/>
       <div className={'images' + (game.isBigNumber ? ' bigNumber' : '')}>
         {[...Array(game.correctNumber)].map((e, i) =>
           <img key={i} src={images[game.randomImage]} alt="Przedmiot"/>

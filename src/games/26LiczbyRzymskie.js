@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import './26LiczbyRzymskie.scss';
+import Voice from '../components/Voice';
 
 function LiczbyRzymskie(prop) {
   const taskCommand = 'Co to za liczba rzymska?';
@@ -70,7 +71,7 @@ function LiczbyRzymskie(prop) {
 
   return (
     <div className="LiczbyRzymskie">
-      <h2>{taskCommand}</h2>
+      <Voice text={taskCommand}/>
       <div className="task">
         <h2>{game.romanNumber}</h2>
       </div>

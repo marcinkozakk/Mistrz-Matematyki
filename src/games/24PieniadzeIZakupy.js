@@ -10,6 +10,7 @@ import gr5 from '../assets/images/coins/5gr.png';
 import gr10 from '../assets/images/coins/10gr.png';
 import gr20 from '../assets/images/coins/20gr.png';
 import gr50 from '../assets/images/coins/50gr.png';
+import Voice from '../components/Voice';
 
 function PieniadzeIZakupy(prop) {
 
@@ -82,7 +83,7 @@ function PieniadzeIZakupy(prop) {
 
   return (
     <div className="PieniadzeIZakupy">
-      <h2>{taskCommand}</h2>
+      <Voice text={taskCommand}/>
       <div className='images'>
         {[...Array(4)].map((e, i) =>
           <img key={i} src={game.images[i]} alt="Moneta"/>
