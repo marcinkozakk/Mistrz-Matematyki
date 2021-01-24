@@ -23,9 +23,9 @@ function Diploma() {
   return (
     <div className="Diploma">
       <h1>Dyplom</h1>
-      <h3>dla</h3>
-      <h2>{localStorage.getItem('name')}</h2>
       <h3>za osiągnięcia w nauce matematyki</h3>
+      <h3>otrzymuje</h3>
+      <h2>{localStorage.getItem('name')}</h2>
       <h3>Klasa {classNumber}</h3>
       <h2>
         <img className="award" src={award} alt="Puchar"/>

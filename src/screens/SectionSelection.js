@@ -19,7 +19,7 @@ function SectionSelection(){
     if(isReadyForDiploma) {
       return (
         <Link to={'/diploma/' + classNumber} target="_blank" onClick={(e) => {
-          const name = window.prompt('Dla kogo ma być dyplom?', window.localStorage.getItem('name') || '');
+          const name = window.prompt('Podaj imię', window.localStorage.getItem('name') || '');
           if(name !== null) {
             window.localStorage.setItem('name', name);
           } else {
