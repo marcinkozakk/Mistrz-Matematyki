@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.834d181a.chunk.css",
-    "main.js": "/static/js/main.7c64b94f.chunk.js",
-    "main.js.map": "/static/js/main.7c64b94f.chunk.js.map",
+    "main.css": "/static/css/main.0865642a.chunk.css",
+    "main.js": "/static/js/main.e89ea308.chunk.js",
+    "main.js.map": "/static/js/main.e89ea308.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.01846134.js",
     "runtime-main.js.map": "/static/js/runtime-main.01846134.js.map",
     "static/js/2.4b309cd7.chunk.js": "/static/js/2.4b309cd7.chunk.js",
     "static/js/2.4b309cd7.chunk.js.map": "/static/js/2.4b309cd7.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.834d181a.chunk.css.map": "/static/css/main.834d181a.chunk.css.map",
+    "static/css/main.0865642a.chunk.css.map": "/static/css/main.0865642a.chunk.css.map",
     "static/js/2.4b309cd7.chunk.js.LICENSE.txt": "/static/js/2.4b309cd7.chunk.js.LICENSE.txt",
     "static/media/-11.117eeb62.PNG": "/static/media/-11.117eeb62.PNG",
     "static/media/-13.c2d24e3d.PNG": "/static/media/-13.c2d24e3d.PNG",
@@ -60,19 +60,19 @@
     "static/media/hat.7627db7f.svg": "/static/media/hat.7627db7f.svg",
     "static/media/hexagon.13d5edb8.png": "/static/media/hexagon.13d5edb8.png",
     "static/media/loud-speaker.bdfec017.svg": "/static/media/loud-speaker.bdfec017.svg",
-    "static/media/Section.scss": "/static/media/trophy.cc7c01b9.svg",
+    "static/media/Section.scss": "/static/media/trophy.62a8a14a.svg",
     "static/media/pencil.a5e1df72.svg": "/static/media/pencil.a5e1df72.svg",
     "static/media/pet.15af0dc0.svg": "/static/media/pet.15af0dc0.svg",
     "static/media/rectangle.e88ebfee.png": "/static/media/rectangle.e88ebfee.png",
     "static/media/sports-car.deabedef.svg": "/static/media/sports-car.deabedef.svg",
-    "static/media/sun.51b603e2.svg": "/static/media/sun.51b603e2.svg",
-    "static/media/teddy-bear.f5480d96.svg": "/static/media/teddy-bear.f5480d96.svg",
+    "static/media/sun.72fa03c5.svg": "/static/media/sun.72fa03c5.svg",
+    "static/media/teddy-bear.19c0df70.svg": "/static/media/teddy-bear.19c0df70.svg",
     "static/media/triangle.43baee6f.png": "/static/media/triangle.43baee6f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.01846134.js",
     "static/js/2.4b309cd7.chunk.js",
-    "static/css/main.834d181a.chunk.css",
-    "static/js/main.7c64b94f.chunk.js"
+    "static/css/main.0865642a.chunk.css",
+    "static/js/main.e89ea308.chunk.js"
   ]
 }
