@@ -4,8 +4,11 @@
   margin: auto;
   text-align: center;
   border: ridge 20px rebeccapurple;
-  box-shadow: inset 0px 30px 15px 5px #FF8080, inset 0px 60px 15px 5px #FFE488, inset 0 90px 15px 5px #8CFF85, inset 0 120px 15px 5px #80C7FF, inset 0 150px 15px 7px #E488FF, inset 0 100px 15px 7px #FF616B, inset 0 200px 27px 1px #8E5CFF, inset 0 200px 28px 44px rgba(0,0,0,0);
+  box-shadow: inset 0 50px 55px 4px #ff8080, inset 0 150px 55px 5px #ffe488, inset 0 250px 189px 5px #8cff85;
 
+  @media print {
+    height: 100vh;
+  }
   h1 {
     margin: 0;
     font-size: 140px;
