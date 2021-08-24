@@ -1,3 +1,42 @@
+# Mistrz matematyki
+
+### Aplikacja do nauki podstaw matematyki dla uczniów klas I - II szkoły podstawowej
+
+Zakres zadań do wykonania przez dzieci pochodzi z programu nauczania dla tych klas.
+
+#### Klasa I:
+* liczby od 0 do 20 (liczenie przedmiotów, aspekt monetarny i porządkowy)
+* dodawanie i odejmowanie w zakresie od 0 do 10
+* równania jednodziałaniowe z niewiadomą w postaci okienka (w zakresie do 10)
+* identyfikacja figur geometrycznych (koło, trójkąt, kwadrat, prostokąt)
+* godziny na zegarze (system dwunastogodzinny), pory roku, miesiące (ich nazwa, liczba i kolejność), dni tygodnia (ich nazwy i kolejność)
+#### Klasa II:
+* liczby od 0 do 100
+* dodawanie i odejmowanie w zakresie od 0 do 100
+* mnożenie i dzielenie w zakresie do 30
+* równania jednodziałaniowe z niewiadomą w postaci okienka (w zakresie do 30)
+* liczby rzymskie od I do XII
+* odczytywanie temperatury na termometrze
+
+### Zadania
+#### Klasa I
+1. Liczenie przedmiotów
+1. Porównywanie liczb
+1. Dodawanie i odejmowanie liczb
+1. Pieniądze i zakupy
+1. Uzupełnianie luk
+1. Figury geometryczne
+1. Kalendarz i czas
+
+#### Klasa II
+1. Porównywanie liczb
+1. Dodawanie i odejmowanie
+1. Pieniądze
+1. Mnożenie i dzielenie
+1. Uzupełnij lukę
+1. Liczby rzymskie
+1. Termometr
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
